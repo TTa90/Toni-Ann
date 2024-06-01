@@ -1,7 +1,7 @@
 
 
 #hero {  
-  width: 100vw;
+  width: 100dvw;
   height: 750px;
   
   /*background-blend-mode: multiply;*/
@@ -84,8 +84,7 @@
 .box-3 {
   grid-area: 1 / 4 / 2 / 5;
   background-color: #001443;
-  background-image: url('/media/portrait_1.png');
-  background-size: cover;
+  
   text-align: center;
   color: #001443;
 
@@ -99,7 +98,7 @@
   top: 30px;
 
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1rem;
   opacity: 0;
   
 
@@ -157,7 +156,7 @@ footer{
 @media only screen and (max-width: 1024px){
   #hero {  
     height: 1350px;
-    width: 100vw;
+    width: 100dvw;
   }
   
   .opening {
@@ -193,10 +192,12 @@ footer{
 }
 
 @media only screen and (max-width: 548px){
+
   #hero {  
-    height: 850px;
+    height: 100dvh;
     
   }
+  
 }
 
 
@@ -205,6 +206,29 @@ footer{
 }
 
 @media only screen and (max-width: 280px){
+  #hero {  
+    width: 100dvw;
+    
+  }
+  .logo {
+    position: relative;
+    top: 35%;
+  }
+  .name-logo {
+    height: 90px;
+  }
   
+  .overlay {
+    position: relative;
+    top: -10%;
+  
+   
+  }
+  
+  .caption{
+    font-size: 70px;
+    color: #001443;
+    
+  }
 }
 
