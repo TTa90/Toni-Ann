@@ -1,9 +1,32 @@
+/*Top Banner*/
+.header{
+  width: 100dvw;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--clr-cream);
+  
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  height: 85%;
+  padding-top: 35px;
+  
+}
+.logo-img {
+  object-fit: contain;
+  height: 100%;
+}
 
 
-#hero {  
+/*opening Grid*/
+#hero { 
+  
   width: 100dvw;
   height: 750px;
   
+  background-color: var(--clr-cream);
   /*background-blend-mode: multiply;*/
   
 }
@@ -11,128 +34,45 @@
 .opening {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  
+  
   height: 100%;
   text-align: center;
   width: 100%;
 }
 
 /*Hello box--Box-1*/
-
-.hello {
+.box-1 {
   grid-area: 1 / 1 / 3 / 3;
-  background-color: #FFE3CC;
-  
-  width: 100%;
+}
+.portrait {
   height: 100%;
-
-  transition: all 0.25s ease-in;
-}
-
-.logo {
-  position: relative;
-  top: 250px;
-
-  z-index: 1;
-}
-
-.name-logo {
-  height: 150px;
-}
-
-.overlay {
-  position: relative;
-  top: 100px;
-
-  transition: all 0.2s ease-in ;
-}
-
-.caption{
-  font-family: "Danfo", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "ELSH" 30;
-  font-size: 6rem;
-  
-  color: #FFE3CC;
+  width: 100%;
   
 }
-
-.opening .hello:hover {
-  background-color: #93002F;
+.port-img{
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  float: right;
 }
-
-.opening .hello:hover .overlay{
-  z-index: 5;
-}
-
-
-
 
 /*box2*/
-
 .box-2 {
   grid-area: 1 / 3 / 2 / 4;
-  background-color: #F0DEFF;
-  color: #001443;
+  background-color: var(--clr-red);
 }
 
 
-/*box3 portrait image*/
+/*box3*/
 .box-3 {
   grid-area: 1 / 4 / 2 / 5;
-  background-color: #001443;
-  
-  text-align: center;
-  color: #001443;
-
-  transition: all 0.25s ease-in;
-}
-
-.intro-text{
-  margin: 0;
-  padding: 5px;
-  position: relative;
-  top: 30px;
-
-  font-weight: 700;
-  font-size: 1rem;
-  opacity: 0;
-  
-
-  background-color: #ffe3ccbe;
-
-  transition: all 0.25s ease-in;
-}
-
-.opening .box-3:hover {
-  background-color: #FFE3CC;
-  
- 
-}
-
-.opening .box-3:hover .intro-text {
-  opacity: 1;
+  background-color: var(--clr-liBlu)
 }
 
 
-/*box4*/
-.box-4 {
-  grid-area: 2 / 3 / 3 / 4;
-  background-color: #93002F;
-  color: #FFE3CC;
-}
-
-.box-5 {
-  grid-area: 2 / 4 / 3 / 5;
-  background-color:  #D7E4FF;
-  color: #93002F;
-}
-
-
-/*footer*/
+/*footer
 
 footer{
   height: 400px;
@@ -149,86 +89,90 @@ footer{
   height: 75px;
 }
 
-
+*/
 
 @media only screen and (min-width: 1201px){}
 @media only screen and (max-width: 1200px){}
 @media only screen and (max-width: 1024px){
-  #hero {  
-    height: 1350px;
-    width: 100dvw;
+  #hero { 
+    height: 450px;
   }
-  
-  .opening {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-
-}
-
-.hello {
-  grid-area: 1 / 1 / 3 / 3;
-}
-
-.box-2 {
-  grid-area: 3 / 1 / 4 / 2;
-}
-
-.box-3 {
-  grid-area: 3 / 2 / 4 / 3;
-}
-
-.box-4 {
-  grid-area: 4 / 1 / 5 / 2;
-}
-
-.box-5 {
-  grid-area: 4 / 2 / 5 / 3;
-}
 }
 
 @media only screen and (max-width: 768px){
-
+  .header{
+    
+    height: 200px;
+  }
+  .logo{
+    height: 70%;
+  }
+  #hero { 
+    height: 850px;
+  }
+  .opening {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .box-1 { 
+    grid-area: 1 / 1 / 3 / 3;
+    
+  }
+  .portrait {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .port-img{
+    
+    object-fit: cover;
+    height: 100%;
+    
+       
+  }
+  .box-2 { 
+    grid-area: 3 / 1 / 5 / 2; 
+  }
+  .box-3 { 
+    grid-area: 3 / 2 / 5 / 3; 
+  }
  
 }
 
 @media only screen and (max-width: 548px){
 
-  #hero {  
-    height: 100dvh;
-    
-  }
+  
   
 }
 
 
 @media only screen and (max-width: 480px){
   
+  .portrait {
+    
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .header{
+    
+    height: 150px;
+  }
+  .logo{
+    height: 60%;
+  }
+  #hero { 
+    height: 650px;
+  }
+  .portrait {
+    height: 100%;
+  }
+  
 }
 
 @media only screen and (max-width: 280px){
-  #hero {  
-    width: 100dvw;
-    
-  }
-  .logo {
-    position: relative;
-    top: 35%;
-  }
-  .name-logo {
-    height: 90px;
-  }
   
-  .overlay {
-    position: relative;
-    top: -10%;
-  
-   
-  }
-  
-  .caption{
-    font-size: 70px;
-    color: #001443;
-    
-  }
 }
 

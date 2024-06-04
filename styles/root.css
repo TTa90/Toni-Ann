@@ -1,11 +1,16 @@
 :root {
-  --clr-text: #93002F;
-  --clr-bckgd: #FFE3CC;
-  --clr-pri: #D7E4FF;
-  --clr-sec: #001443;
-  --clr-acc: #F0DEFF;
+  --clr-red: #93002F;
+  --clr-cream: #FFE3CC;
+  --clr-liBlu: #D7E4FF;
+  --clr-blue: #001443;
+  --clr-pur: #F0DEFF;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  
+}
 
 *
 *::before,
@@ -14,10 +19,11 @@
   padding: 0;
   overflow-y: scroll;
   overflow-x: hidden;
-}
+  
 
 html{
   scroll-behavior: smooth;
+  
 }
 
 body{
@@ -27,12 +33,18 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
+}
 
 h1, h2, h3{
   text-transform: uppercase;
   font-weight: bold;
-  margin: 15px 0;
+  margin: 0 0;
   
+}
+
+a{
+  text-decoration: none;
+  color: var(--clr-cream);
 }
 
 img,
