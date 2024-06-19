@@ -29,8 +29,10 @@ html{
 body{
   margin: 0;
   padding: 0;
+  background-color: var(--clr-cream);
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   font-size: 16px;
 }
 }
@@ -39,12 +41,18 @@ h1, h2, h3{
   text-transform: uppercase;
   font-weight: bold;
   margin: 0 0;
-  
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+p, li, span, a, button{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 
 a{
   text-decoration: none;
-  color: var(--clr-cream);
+  
 }
 
 img,
@@ -56,6 +64,8 @@ svg {
 }
 
 button{
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
   display: inline-block;
   padding: 0;
   border: none;
@@ -70,6 +80,36 @@ ul{
   margin: 0;
   padding: 0;
 }
+
+
+/*Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--clr-cream);
+  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--clr-red);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-blue);
+}
+
+
+
+
+
 
 @media only screen and (min-width: 1201px){}
 @media only screen and (max-width: 1200px){}

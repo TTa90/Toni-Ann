@@ -1,0 +1,100 @@
+/*Top Banner*/
+.header{
+  width: 100dvw;
+  height: 350px;
+  margin: 0;
+  padding: 15px 0;
+  background-color: var(--clr-cream);
+  color: var(--clr-red);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav div ul{
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+nav div ul li {
+  padding: 0 50px;
+  font-size: 1.5rem;
+}
+
+li a{
+  font-family: "Playfair Display";
+  font-weight: 700;
+  color: var(--clr-red);
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+
+.nav-link:hover {
+  color: var(--clr-blue);
+ 
+}
+
+
+.logo {
+  height: 55%;
+  
+  
+}
+.logo-img {
+  object-fit: contain;
+  height: 100%;
+}
+
+
+
+
+
+@media only screen and (min-width: 1201px){}
+@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 1024px){
+  
+ 
+}
+
+@media only screen and (max-width: 548px){
+  .header{
+    width: 100dvw;
+    height: 220px;
+    
+  }
+
+  nav div ul li {
+    padding: 0 25px;
+    font-size: 1.3rem;
+  }
+  
+  
+}
+
+
+@media only screen and (max-width: 480px){
+  .header{
+    width: 100dvw;
+    height: 120px;
+    
+  }
+
+  nav div ul li {
+    padding: 0 15px;
+    font-size: 1rem;
+  }
+ 
+}
+
+@media only screen and (max-width: 375px){
+ 
+  
+}
+
+@media only screen and (max-width: 280px){
+  
+}

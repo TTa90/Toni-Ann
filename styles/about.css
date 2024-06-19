@@ -1,189 +1,229 @@
-
-.project-section {
-  height: 700px;
-  width: 100dvw;
+/*opening Grid*/
+#hero { 
   
+  width: 100dvw;
+  height: 750px;
+  
+  background-color: var(--clr-cream);
+  /*background-blend-mode: multiply;*/
+  
+}
+
+.opening {
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  
+  
+  height: 100%;
+  text-align: center;
+  width: 100%;
 
+}
+
+/*Portrait box--Box-1*/
+.box-1 {
+  grid-area: 1 / 1 / 3 / 3;
+}
+.portrait {
+  height: 100%;
+  width: 100%;
+  
+}
+.port-img{
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  float: right;
+}
+
+/*box2*/
+.box-2 {
+  grid-area: 1 / 3 / 2 / 4;
   background-color: var(--clr-red);
-  
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-
-.flowers {
-  content: '';
-  height: 100%;
-  width: 33dvw;
-  background: url('/media/IMG_3233.JPG') right;
-  
-  background-size: cover;
-  
-  background-color: #93002F;
-  background-blend-mode: overlay;
-
-  transition: all 0.5s ease-in;
-}
-
-
-.examples {
-  opacity: 0;
-  color: var(--clr-cream);
-  height: 100%;
-
-  background-color: rgba(147, 0, 47, 0.555);
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  transition: all 0.5s ease-in;
 }
 
-.flowers:hover {
-  
-  background-image: url('/media/Screenshot\ 2024-06-03\ 172239.png');
-  
-  
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
-  cursor: pointer;
+.text-container {
+  padding: 20px;
+  color: var(--clr-cream);
 }
 
-.flowers:hover .examples {
-  opacity: 100%;
+.text-container h1 {
+  text-align: start;
+  padding-bottom: 10px;
 }
 
-.flowers1{
-  content: '';
+.intro {
+  font-size: 1.5rem;
+}
+
+/*box3// Software + Skills*/
+.box-3 {
+  grid-area: 1 / 4 / 2 / 5;
+  background-color: var(--clr-liBlu);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-3 div {
+  color: var(--clr-red);
+}
+
+.box-3 h1 {
+  color: var(--clr-blue);
+}
+
+.box-3 .text-container {
   height: 100%;
-  width: 33dvw;
-  background: url('/media/IMG_3242.JPG') center;
-  
-  background-size: cover;
-  
-  background-color: #93002F;
-  background-blend-mode: hard-light;
-
-  transition: all 0.5s ease-in;
-}
-.flowers1:hover {
-  background-color: var(--clr-blue);
-  background-image: none;
-  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.flowers2 {
-  content: '';
-  height: 100%;
-  width: 33dvw;
-  background: url('/media/IMG_3235.JPG') left;
-  
-  background-size: cover;
-  
-  background-color: #93002F;
-  background-blend-mode: hard-light;
-
-  transition: all 0.5s ease-in;
+ul {
+  margin: 5px;
 }
-.flowers2:hover {
-  background-color: var(--clr-blue);
-  background-image: none;
-  cursor: pointer;
+
+.skil-list {
+  font-size: 1.2rem;
+}
+
+.col1 {
+  text-align: left;
+}
+.col2 {
+  text-align: right;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skills {
+  margin-bottom: 20px;
 }
 
 
 
+/*footer
 
-#final{
-  width: 100dvw;
-  height: 750px;
-  text-align: center;
+footer{
+  height: 400px;
+  width: 100vw;
+  background-color: #FFE3CC;
+  padding: 15px 0px;
+  
+  display: flex;
+  justify-content: center;
+  
 }
 
-.last-sec {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  height: 100%;
-  }
-  
-  .sec-1 { 
-    grid-area: 1 / 1 / 2 / 2; 
-    background-color: #F0DEFF;
-    color: #001443;
-  }
-  
-  .sec-2 { 
-    grid-area: 1 / 2 / 2 / 3;
-    background-color: #001443;
-    color: #FFE3CC;
-  }
-  
-  .sec-3 { 
-    grid-area: 2 / 1 / 3 / 3;
-    background-color: #93002F;
-    
-    background: url('/media/IMG_3242.JPG') center;
-  
-    background-size: cover;
-  
-    background-color: #93002F;
-    background-blend-mode: hard-light;
-  }
-  
-  .sec-4 { 
-    grid-area: 1 / 3 / 3 / 5;
-    background-color: #D7E4FF;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.foot-logo {
+  height: 75px;
+}
+
+*/
+
+@media only screen and (min-width: 1201px){}
+@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 1024px){
+  #hero { 
+    height: 750px;
   }
 
-  .silh{
-    position: relative;
-    height: 400px;
+  .intro {
+    font-size: 1.3rem;
   }
-
-
-
+}
 
 @media only screen and (max-width: 768px){
-  #final {  
+ 
+  #hero { 
     height: 1050px;
   }
-  
-  
-  .last-sec {
+  .opening {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-
-    }
+  }
+  .box-1 { 
+    grid-area: 1 / 1 / 3 / 3;
     
-    .sec-1 { grid-area: 1 / 1 / 2 / 2; }
-    .sec-2 { grid-area: 1 / 2 / 2 / 3; }
-    .sec-3 { grid-area: 2 / 1 / 3 / 3; }
-    .sec-4 { grid-area: 3 / 1 / 5 / 3; }
+  }
+  .portrait {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .port-img{
+    
+    object-fit: cover;
+    height: 100%;
+    
+       
+  }
+  .box-2 { 
+    grid-area: 3 / 1 / 5 / 2; 
+  }
+  .intro {
+    font-size: 1.3rem;
+  }
+  .box-3 { 
+    grid-area: 3 / 2 / 5 / 3; 
+  }
  
 }
+
 @media only screen and (max-width: 548px){
-  .project-flowers img {
-    height: 600px;
-    width: 100%;
+  #hero { 
+    height: 1050px;
   }
+  .intro {
+    font-size: 1.3rem;
+  }
+  .skil-list {
+    font-size: 1.1rem;
+  }
+  
 }
+
+
 @media only screen and (max-width: 480px){
+  
+  .portrait {
+    
+    height: 100%;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+  .skil-list {
+    font-size: 1rem;
+  }
+ 
+}
+
+@media only screen and (max-width: 375px){
+ 
+  #hero { 
+    height: 950px;
+  }
+  .portrait {
+    height: 100%;
+  }
   
 }
 
 @media only screen and (max-width: 280px){
   
 }
+

@@ -1,0 +1,184 @@
+
+.project-section {
+  height: 700px;
+  width: 100dvw;
+  
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--clr-red);
+  
+  display: block;
+}
+
+.column-row__sec {
+  height: 100%;
+  width: 100%;
+
+  
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.examples a {
+  color: var(--clr-cream);
+}
+
+/*First Project// Flex 1 */
+.flowers {
+  content: '';
+  height: 100%;
+  
+  background: url('/media/IMG_3233.JPG') right;
+  
+  background-size: cover;
+  
+  background-color: #93002F;
+  background-blend-mode: overlay;
+
+  transition: all 0.5s ease-in;
+}
+
+
+.examples {
+  opacity: 100;
+  color: var(--clr-cream);
+  height: 100%;
+
+  background-color: rgba(147, 0, 47, 0.555);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  transition: all 0.5s ease-in;
+}
+
+.description {
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+h1 {
+  color: var(--clr-pur);
+}
+
+span {
+  color: var(--clr-pur);
+}
+
+button {
+  font-size: 1rem;
+  background-color: var(--clr-pur);
+  color: var(--clr-red);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 15px;
+
+  transition: all 0.3s ease-in;
+}
+
+/*First Project// Flex 1// Hover */
+.flowers:hover {
+  
+  background-image: url('/media/Screenshot\ 2024-06-03\ 172239.png');
+  background-color: var(--clr-blue);
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  cursor: pointer;
+}
+
+.flowers:hover .examples {
+  opacity: 100%;
+}
+
+.flowers:hover button,
+.flowers1:hover button,
+.flowers2:hover button{
+  background-color: var(--clr-red);
+  color: var(--clr-pur);
+  border-radius: 20px;
+}
+
+
+/*Second Project// Flex 2 */
+.flowers1{
+  content: '';
+  height: 100%;
+  
+  background: url('/media/DSCN2605.JPG') center;
+  
+  background-size: cover;
+  
+  background-color: var(--clr-blue);
+  background-blend-mode: soft-light;
+
+  transition: all 0.5s ease-in;
+}
+.flowers1:hover {
+  background-color: var(--clr-liBlu);
+  background-image: url('/media/IMG_3242.JPG') center;
+  background-blend-mode: overlay;
+  cursor: pointer;
+}
+
+
+/*Third Project// Flex 3 */
+.flowers2 {
+  content: '';
+  height: 100%;
+  
+  background: url('/media/IMG_3235.JPG') left;
+  
+  background-size: cover;
+  
+  background-color: var(--clr-liBlue);
+  background-blend-mode: overlay;
+
+  transition: all 0.5s ease-in;
+}
+.flowers2:hover {
+  background-color: var(--clr-pur);
+  background-image: url('/media/IMG_3235.JPG') left;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+  .project-section {
+    height: 950px;
+    
+  }
+  .column-row__sec {
+      
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+  }
+  
+ 
+}
+@media only screen and (max-width: 548px){
+ 
+ 
+}
+@media only screen and (max-width: 480px){
+  
+}
+
+@media only screen and (max-width: 280px){
+  
+}
