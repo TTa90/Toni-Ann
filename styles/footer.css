@@ -17,3 +17,15 @@ footer{
   height: 100px;
 }
 
+.go-to-top {
+  font-size: 30px;
+  
+  padding: 10px 20px;
+  background-color: var(--clr-red);
+  margin-top: 50px;
+  border-radius: 50%;
+}
+
+.go-to-top i {
+  color: var(--clr-cream);
+}
