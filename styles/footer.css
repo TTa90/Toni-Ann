@@ -1,5 +1,6 @@
 footer{
-  width: 100dvw;
+  max-width: 1800px;
+  width: 100%;
   height: 250px;
   background-color: var(--clr-cream);
   
@@ -15,3 +16,4 @@ footer{
 .foot-logo{
   height: 100px;
 }
+

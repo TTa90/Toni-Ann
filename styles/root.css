@@ -1,6 +1,6 @@
 :root {
   --clr-red: #93002F;
-  --clr-cream: #FFE3CC;
+  --clr-cream: #fff6f0;
   --clr-liBlu: #D7E4FF;
   --clr-blue: #001443;
   --clr-pur: #F0DEFF;
@@ -9,7 +9,6 @@
 *{
   margin: 0;
   padding: 0;
-  
 }
 
 *
@@ -23,18 +22,26 @@
 
 html{
   scroll-behavior: smooth;
-  
+}
+
 }
 
 body{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  background-color: var(--clr-cream);
+  width: 100dvw;
+  max-width: 100%;
+  overflow-x: hidden;
 
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
-}
+  background-color: var(--clr-cream);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1, h2, h3{
@@ -76,7 +83,7 @@ button{
 
 
 ul{
-  list-style: none;
+ 
   margin: 0;
   padding: 0;
 }
